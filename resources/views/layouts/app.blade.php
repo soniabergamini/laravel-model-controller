@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('page-title', 'Hello Laravel World')</title>
+    <title>@yield('page-title', 'MOVIES')</title>
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -15,12 +15,8 @@
     <!--  Includo l'header del sito web con il menu tramite un partial -->
     @include('partials.header')
 
-    <main>
-        @yield('content')
-    </main>
-
-    <!-- Includo il footer del sito web tramite un partial -->
-    @include('partials.footer')
+    <!--  Includo il contenuto specifico della pagina -->
+    @yield('content')
 
     <!-- Assets JS/CSS -->
     @vite('resources/js/app.js')
