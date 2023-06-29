@@ -15,4 +15,4 @@ use App\Http\Controllers\Guest\PageController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('homepage');
-Route::get('/otherpage', [PageController::class, 'index']);
+// Route::get('/otherpage', [PageController::class, 'index']);
